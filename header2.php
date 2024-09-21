@@ -15,14 +15,5 @@
 </header>
 
 
-<!-- <div class="row">
-  <div class="d-flex justify-content-center"></div>
-  <div class="row">
-    <?php
-    if($taby_and_tamara==1){
-      //echo ' <img src="taby_only.png" alt="Image" class="responsive">';
-    }
-    ?>
-  </div>
-</div> -->
+ 
 

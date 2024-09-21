@@ -1,4 +1,3 @@
- 
 <style>
     .package {
         border: 1px solid #ddd;
@@ -10,11 +9,20 @@
     .package:hover {
         transform: scale(1.05);
     }
+    /* Remove horizontal spacing from row */
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .no-gutters > [class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
 </style>
 
-<div class="container mt-5" id="packages">
+<div class="container-fluid mt-5" id="packages">
     <h2 class="mb-4 text-center">خدماتنا</h2>
-    <div class="row" id="service1_id">
+    <div class="row no-gutters" id="service1_id">
 
         <!-- Service 1: جلسة علاج فردي للاكتئاب -->
         <div class="mb-3 col-sm-6 col-md-3" data-aos="zoom-in-up">
@@ -22,7 +30,6 @@
                 <img src="packages/1.webp" class="img-fluid" alt="جلسة علاج فردي للاكتئاب">
                 <h5 class="mt-3">جلسة علاج فردي للاكتئاب</h5>
                 <p>تستخدم جلسات العلاج الفردي لدينا لعلاج الاكتئاب والقلق تقنية برمجة العقل السريعة الخاصة بنا للتعامل بفعالية مع الصدمات...</p>
-                <!-- Two buttons -->
                 <button class="btn btn-primary open-modal" data-href1="https://tachafi-by-cm.zbooni.com/products/individuals" data-href2="https://more-info.com/individuals">حجز موعد</button>
             </div>
         </div>
@@ -72,7 +79,7 @@
                 <p>اختر أحد الخيارات التالية:</p>
                 <!-- Two buttons for the links -->
                 <a id="modal-href1" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة العربية </a>
-                <a id="modal-href2" href="#" class="mb-2 btn btn-primary w-100">  جلسة باللغة الانجليزية  </a>
+                <a id="modal-href2" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة الانجليزية</a>
             </div>
         </div>
     </div>

@@ -66,7 +66,8 @@ if($header==2){
 
 include "packages.php";
 include "about.php";
-include "gmap_reviews.php";
+include "why_us.php";
+//include "gmap_reviews.php";
 
 
 
