@@ -29,7 +29,7 @@
     }
 </style>
 
-<div class="container-fluid mt-5" id="packages">
+<div class="container-fluid mt-5" id="service1_id">
     <h2 class="mb-4 text-center">خدماتنا</h2>
     <div class="row no-gutters" id="service-container"></div>
 </div>
