@@ -33,7 +33,16 @@ $location=$_POST['location'];
 $user_email_to_hash=$email;
 $user_phone_to_hash=$phpne;
 $user_click_id=$_SESSION['ScCid'];
-include "capi_signup.php";
+
+
+if($snap_capi==1){	
+
+	//include "capi_page_view.php";
+	include "capi_signup.php";
+
+
+	}
+ 
 
 //die;
 

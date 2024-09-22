@@ -54,8 +54,17 @@ $_SESSION['ScCid']=$ScCid;
  
 include "info.php";
 
-include "capi_page_view.php";
-//include "capi_signup.php";
+if($snap_capi==1){	
+
+	include "capi_page_view.php";
+	//include "capi_signup.php";
+
+
+	}
+
+
+
+
 
 ?>
 
