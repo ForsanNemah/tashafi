@@ -4,68 +4,34 @@
         border-radius: 5px;
         padding: 15px;
         text-align: center;
-        transition: transform 0.2s;
-       
+        transition: transform 0.2s ease-in-out;
     }
+
     .package:hover {
         transform: scale(1.05);
     }
-    /* Remove horizontal spacing from row */
-    .no-gutters {
-        margin-right: 0;
-        margin-left: 0;
+
+    .no-gutters > .col {
+        padding: 0;
     }
-    .no-gutters > [class*='col-'] {
-        padding-right: 0;
-        padding-left: 0;
+
+    /* Add spacing between packages in desktop mode */
+    @media (min-width: 768px) {
+        .package-col {
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+    }
+
+    /* Add some spacing for small screens */
+    .package-col {
+        margin-bottom: 20px;
     }
 </style>
 
 <div class="container-fluid mt-5" id="packages">
     <h2 class="mb-4 text-center">خدماتنا</h2>
-    <div class="row no-gutters" id="service1_id">
-
-        <!-- Service 1: جلسة علاج فردي للاكتئاب -->
-        <div class="mb-3 col-sm-6 col-md-3 mainbg2" data-aos="zoom-in-up">
-            <div class="package">
-                <img src="packages/1.webp" class="img-fluid" alt="جلسة علاج فردي للاكتئاب">
-                <h5 class="mt-3">جلسة علاج فردي للاكتئاب</h5>
-                <p>تستخدم جلسات العلاج الفردي لدينا لعلاج الاكتئاب والقلق تقنية برمجة العقل السريعة الخاصة بنا للتعامل بفعالية مع الصدمات...</p>
-                <button class="btn btn-primary open-modal mb-2" data-href1="https://tachafi-by-cm.zbooni.com/products/individuals" data-href2="https://more-info.com/individuals">حجز موعد</button>
-            </div>
-        </div>
-
-        <!-- Service 2: جلسة علاج زوجي -->
-        <div class="mb-3 col-sm-6 col-md-3 mt-5 mainbg2" data-aos="zoom-in-up">
-            <div class="package">
-                <img src="packages/2.webp" class="img-fluid" alt="جلسة علاج زوجي">
-                <h5 class="mt-3">جلسة علاج زوجي</h5>
-                <p>في جلسات العلاج الزوجي لدينا، نعمل عن قرب مع الشريكين لإعادتهم إلى اللحظة التي تواصلا فيها لأول مرة...</p>
-                <button class="btn btn-primary open-modal mb-2" data-href1="https://tachafi-by-cm.zbooni.com/products/couple-therapy-1118679" data-href2="https://more-info.com/couple-therapy">حجز موعد</button>
-            </div>
-        </div>
-
-        <!-- Service 3: جلسة علاج للمراهقين -->
-        <div class="mb-3 col-sm-6 col-md-3 mt-5 mainbg2" data-aos="zoom-in-up">
-            <div class="package">
-                <img src="packages/3.webp" class="img-fluid" alt="جلسة علاج للمراهقين">
-                <h5 class="mt-3">جلسة علاج للمراهقين</h5>
-                <p>في "تشافي"، يستخدم أطباؤنا ومعالجونا تقنية برمجة العقل السريعة لمساعدة المراهقين على تجاوز أصعب مراحل المراهقة...</p>
-                <button class="btn btn-primary open-modal mb-2" data-href1="https://tachafi-by-cm.zbooni.com/products/teens-therapy" data-href2="https://more-info.com/teens-therapy">حجز موعد</button>
-            </div>
-        </div>
-
-        <!-- Service 4: علاج الصدمات والحزن -->
-        <div class="mb-3 col-sm-6 col-md-3 mt-5 mainbg2" data-aos="zoom-in-up">
-            <div class="package">
-                <img src="packages/4.webp" class="img-fluid" alt="علاج الصدمات والحزن">
-                <h5 class="mt-3">علاج الصدمات والحزن</h5>
-                <p>ساعد طفلك على تجاوز التحديات العاطفية والسلوكية من خلال جلسات علاجية تفاعلية وممتعة...</p>
-                <button class="btn btn-primary open-modal mb-2" data-href1="https://tachafi-by-cm.zbooni.com/products/child-therapy-1118680" data-href2="https://more-info.com/child-therapy">حجز موعد</button>
-            </div>
-        </div>
-
-    </div>
+    <div class="row no-gutters" id="service-container"></div>
 </div>
 
 <!-- Modal HTML -->
@@ -78,8 +44,7 @@
             </div>
             <div class="modal-body">
                 <p>اختر أحد الخيارات التالية:</p>
-                <!-- Two buttons for the links -->
-                <a id="modal-href1" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة العربية </a>
+                <a id="modal-href1" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة العربية</a>
                 <a id="modal-href2" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة الانجليزية</a>
             </div>
         </div>
@@ -87,6 +52,62 @@
 </div>
 
 <script>
+    // Array of services to dynamically generate HTML content
+    const services = [
+        {
+            title: 'جلسة علاج فردي للاكتئاب',
+            description: 'تستخدم جلسات العلاج الفردي لدينا لعلاج الاكتئاب والقلق تقنية برمجة العقل السريعة الخاصة بنا للتعامل بفعالية مع الصدمات...',
+            imgSrc: 'packages/1.webp',
+            alt: 'جلسة علاج فردي للاكتئاب',
+            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/jls-lj-lfrd-s-h',
+            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/individuals'
+        },
+        {
+            title: 'جلسة علاج زوجي',
+            description: 'في جلسات العلاج الزوجي لدينا، نعمل عن قرب مع الشريكين لإعادتهم إلى اللحظة التي تواصلا فيها لأول مرة...',
+            imgSrc: 'packages/2.webp',
+            alt: 'جلسة علاج زوجي',
+            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/lj-lzwjyn-s',
+            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/couple-therapy-1118679'
+        },
+        {
+            title: 'جلسة علاج للمراهقين',
+            description: 'في "تشافي"، يستخدم أطباؤنا ومعالجونا تقنية برمجة العقل السريعة لمساعدة المراهقين على تجاوز أصعب مراحل المراهقة...',
+            imgSrc: 'packages/3.webp',
+            alt: 'جلسة علاج للمراهقين',
+            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/t-1123548',
+            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/teens-therapy'
+        },
+        {
+            title: 'جلسة علاج الأطفال ',
+            description: 'ساعد طفلك على تجاوز التحديات العاطفية والسلوكية من خلال جلسات علاجية تفاعلية وممتعة...',
+            imgSrc: 'packages/4.webp',
+            alt: 'علاج الصدمات والحزن',
+            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/jls-lj-ltfl-s',
+            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/child-therapy-1118680'
+        }
+    ];
+
+    // Function to generate service HTML
+    function generateServiceHTML(service) {
+        return `
+            <div class="col-sm-6 col-md-3 package-col mainbg2" data-aos="zoom-in-up">
+                <div class="package">
+                    <img src="${service.imgSrc}" class="img-fluid" alt="${service.alt}" loading="lazy">
+                    <h5 class="mt-3">${service.title}</h5>
+                    <p>${service.description}</p>
+                    <button class="btn btn-primary open-modal mb-2" data-href1="${service.dataHref1}" data-href2="${service.dataHref2}">حجز موعد</button>
+                </div>
+            </div>
+        `;
+    }
+
+    // Populate services in the container
+    const serviceContainer = document.getElementById('service-container');
+    services.forEach(service => {
+        serviceContainer.innerHTML += generateServiceHTML(service);
+    });
+
     // JavaScript to handle modal functionality
     document.querySelectorAll('.open-modal').forEach(button => {
         button.addEventListener('click', function() {
