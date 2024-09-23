@@ -234,3 +234,12 @@ color: rgb(0, 0, 0);
   background-color: #a5fba1;
    
 }
+
+
+
+.headfont {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: 63b1632;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

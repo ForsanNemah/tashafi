@@ -25,10 +25,9 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .team-member h3 {
-        font-size: 1.5rem;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: #007bff;
+        @extend .headfont;
+        
+       
     }
     .section-title {
         font-size: 2.5rem;

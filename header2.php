@@ -1,9 +1,9 @@
 <header class="py-5 mt-5 text-center mainbg" >
   <div class="container">
-    <h1 class="display-4 fw-bold" style="font-size: 3rem; letter-spacing: 1px;">
+    <h1 class="display-4 fw-bold headfont" >
       مستقبل الصحة النفسية
     </h1>
-    <p class="lead mt-3 mb-4" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+    <p class="lead mt-3 mb-4 bold" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;  font-weight: bold;">
       أول منصة لقياس تقدم صحتك النفسية بدقة باستخدام الذكاء الاصطناعي
     </p>
     
