@@ -5,10 +5,18 @@
         padding: 15px;
         text-align: center;
         transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .package:hover {
         transform: scale(1.05);
+    }
+
+    .package-content {
+        flex-grow: 1;
     }
 
     .no-gutters > .col {
@@ -38,14 +46,18 @@
 <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="appointmentModalLabel">حجز موعد</h5>
+            <div class="modal-header d-flex justify-content-between">
+                <!-- زر الإغلاق على اليسار -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- العنوان على اليمين -->
+                <h5 class="modal-title ms-auto" id="appointmentModalLabel">حجز موعد</h5>
             </div>
             <div class="modal-body">
                 <p>اختر أحد الخيارات التالية:</p>
-                <a id="modal-href1" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة العربية</a>
-                <a id="modal-href2" href="#" class="mb-2 btn btn-primary w-100">جلسة باللغة الانجليزية</a>
+                <div class="d-flex gap-2">
+                    <a id="modal-href1" href="#" class="btn btn-primary w-50">جلسة باللغة العربية</a>
+                    <a id="modal-href2" href="#" class="btn btn-primary w-50">جلسة باللغة الانجليزية</a>
+                </div>
             </div>
         </div>
     </div>
@@ -94,8 +106,10 @@
             <div class="col-sm-6 col-md-3 package-col mainbg2" data-aos="zoom-in-up">
                 <div class="package">
                     <img src="${service.imgSrc}" class="img-fluid" alt="${service.alt}" loading="lazy">
-                    <h5 class="mt-3">${service.title}</h5>
-                    <p>${service.description}</p>
+                    <div class="package-content">
+                        <h5 class="mt-3">${service.title}</h5>
+                        <p>${service.description}</p>
+                    </div>
                     <button class="btn btn-primary open-modal mb-2" data-href1="${service.dataHref1}" data-href2="${service.dataHref2}">حجز موعد</button>
                 </div>
             </div>
