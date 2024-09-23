@@ -47,13 +47,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between">
-                <!-- زر الإغلاق على اليسار -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <!-- العنوان على اليمين -->
-                <h5 class="modal-title ms-auto" id="appointmentModalLabel">حجز موعد</h5>
+                <h5 class="modal-title" id="appointmentModalLabel">حجز موعد</h5>
             </div>
             <div class="modal-body">
                 <p>اختر أحد الخيارات التالية:</p>
+                <!-- Add d-flex and gap for spacing -->
                 <div class="d-flex gap-2">
                     <a id="modal-href1" href="#" class="btn btn-primary w-50">جلسة باللغة العربية</a>
                     <a id="modal-href2" href="#" class="btn btn-primary w-50">جلسة باللغة الانجليزية</a>
