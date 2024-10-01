@@ -1,6 +1,6 @@
 :root {
 
-    --form_bg: #f5efe4;
+    --form_bg: #00546b;
     --button_bg: #8a0029;
     --reg_btn_bg: #05af10;
     
@@ -226,7 +226,7 @@ color: rgb(0, 0, 0);
 
 
 .mainbg {
-  background-color: #d8fad4;
+  background-color: #bffbb8;
    
 }
 
@@ -240,6 +240,6 @@ color: rgb(0, 0, 0);
 .headfont {
   font-size: 2.5rem;
   font-weight: bold;
-  color: 63b1632;
+  color: 228210;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
