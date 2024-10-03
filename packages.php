@@ -65,8 +65,8 @@
                 <p>اختر أحد الخيارات التالية:</p>
                 <!-- Add d-flex and gap for spacing -->
                 <div class="d-flex gap-2">
-                    <a id="modal-href1" href="#" class="btn btn-primary w-50">جلسة باللغة العربية</a>
-                    <a id="modal-href2" href="#" class="btn btn-primary w-50">جلسة باللغة الانجليزية</a>
+                    <a id="modal-href1" href="#" class="btn booking-btn-class w-50">جلسة باللغة العربية</a>
+                    <a id="modal-href2" href="#" class="btn booking-btn-class w-50">جلسة باللغة الانجليزية</a>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                         <h5 class="mt-3">${service.title}</h5>
                         <p>${service.description}</p>
                     </div>
-                    <button class="btn btn-primary open-modal mb-2" data-href1="${service.dataHref1}" data-href2="${service.dataHref2}">حجز موعد</button>
+                    <button class="btn booking-btn-class open-modal mb-2" data-href1="${service.dataHref1}" data-href2="${service.dataHref2}">حجز موعد</button>
                 </div>
             </div>
         `;
