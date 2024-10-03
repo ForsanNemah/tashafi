@@ -4,9 +4,10 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .team-member {
+        @extend .bgmain;
         text-align: center;
         margin-bottom: 40px;
-        background-color: #9bfe8f;
+      
         padding: 20px;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,19 +61,19 @@
             <h3> 
 
 
-            Cayte Mocadam
+            Psychologist and Founder of CMDC
 
 
 
             </h3>
         </div>
 
-        <div class="col-md-4 team-member">
+        <div class="col-md-4 team-member ">
             <img src="doctors/2.webp" alt="Team Member 1">
             <h3>    
 
 
-            Mahmoud Shehab
+            Adult Psychiatry and Addiction Medicine
 
             </h3>
         </div>
@@ -82,7 +83,7 @@
             <h3>   
 
 
-            Celine Abou Najm
+            NLP Practitioner, Rapid Mind Programming Practitioner
 
             </h3>
         </div>
@@ -92,7 +93,7 @@
             <h3>   
 
 
-            Line Samaha
+            Mental Health Consultant, Social Worker
 
             </h3>
         </div>
@@ -103,7 +104,7 @@
 
 
 
-            Coach Dalia
+            Mental Health Consultant, Social Worker (Arabic)
 
             </h3>
         </div>
@@ -113,7 +114,7 @@
             <h3>  
 
 
-            Magdalena Wells
+            Life Coaching, Leadership Development Coaching, Time Management & Productivity Coaching
 
 
             </h3>
@@ -123,7 +124,7 @@
             <img src="doctors/7.webp" alt="Team Member 1">
             <h3>   
 
-            Giulio Vanzan
+            Hypnotherapy and Relationship Coaching
             
             </h3>
         </div>
@@ -133,7 +134,7 @@
             <h3>  
 
 
-            Jamal Toufik Chaya
+            Clinical Psychologist, Psychotherapist, Couple Therapist, Child and Teenager Therapist
 
             </h3>
         </div>
@@ -142,7 +143,7 @@
             <img src="doctors/9.webp" alt="Team Member 1">
             <h3>   
 
-            Marie Louise Khater
+            Addicts Therapy, Helping Adults, One-to-One Therapy, Group Therapy
 
             
             </h3>

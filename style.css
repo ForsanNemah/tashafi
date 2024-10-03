@@ -231,7 +231,7 @@ color: rgb(0, 0, 0);
 }
 
 .mainbg2 {
-  background-color: #bffbb8;
+  background-color: #acf8a4;
    
 }
 
@@ -242,4 +242,16 @@ color: rgb(0, 0, 0);
   font-weight: bold;
   color: 228210;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.booking-btn-class {
+  background-color: #17e400; /* Initial button color */
+  color: white; /* Text color */
+}
+
+.booking-btn-class:hover {
+  background-color: #009e25; /* Color when hovered */
+  color: white; /* Text color when hovered */
 }

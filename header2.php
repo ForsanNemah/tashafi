@@ -8,8 +8,18 @@
     </p>
     
     <!-- Booking Button -->
-    <a data-aos="zoom-in-up" href="#service1_id" class="btn btn-primary btn-lg" style="border-radius: 50px; padding: 15px 40px; transition: all 0.3s ease-in-out;">
+    <a data-aos="zoom-in-up" href="#service1_id" class="btn booking-btn-class " style="border-radius: 50px; padding: 15px 40px; transition: all 0.3s ease-in-out;">
       احجز الآن
     </a>
   </div>
 </header>
+
+
+
+<style>
+
+
+
+</style>
+
+

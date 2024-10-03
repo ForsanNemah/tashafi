@@ -35,6 +35,17 @@
     .package-col {
         margin-bottom: 20px;
     }
+
+    /* Custom CSS to place the close button on the far left */
+    .modal-header {
+        position: relative;
+        padding-left: 3rem; /* Space for the close button on the left */
+    }
+
+    .btn-close {
+        position: absolute;
+        left: 1rem; /* Place the button at the far left */
+    }
 </style>
 
 <div class="container-fluid mt-5" id="service1_id">
@@ -46,9 +57,9 @@
 <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header d-flex justify-content-between">
+            <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h5 class="modal-title" id="appointmentModalLabel">حجز موعد</h5>
+                <h5 class="modal-title mx-auto" id="appointmentModalLabel">حجز موعد</h5>
             </div>
             <div class="modal-body">
                 <p>اختر أحد الخيارات التالية:</p>
@@ -70,32 +81,32 @@
             description: 'تستخدم جلسات العلاج الفردي لدينا لعلاج الاكتئاب والقلق تقنية برمجة العقل السريعة الخاصة بنا للتعامل بفعالية مع الصدمات...',
             imgSrc: 'packages/1.webp',
             alt: 'جلسة علاج فردي للاكتئاب',
-            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/jls-lj-lfrd-s-h',
-            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/individuals'
+            dataHref1: 'https://cmconsultancy.simplybook.asia/v2/#book/service/14/count/1/',
+            dataHref2: 'https://cmconsultancy.simplybook.asia/v2/#book/service/5/count/1/'
         },
         {
             title: 'جلسة علاج زوجي',
             description: 'في جلسات العلاج الزوجي لدينا، نعمل عن قرب مع الشريكين لإعادتهم إلى اللحظة التي تواصلا فيها لأول مرة...',
             imgSrc: 'packages/2.webp',
             alt: 'جلسة علاج زوجي',
-            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/lj-lzwjyn-s',
-            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/couple-therapy-1118679'
+            dataHref1: 'https://cmconsultancy.simplybook.asia/v2/#book/service/13/count/1/',
+            dataHref2: 'https://cmconsultancy.simplybook.asia/v2/#book/service/4/count/1/'
         },
         {
             title: 'جلسة علاج للمراهقين',
             description: 'في "تشافي"، يستخدم أطباؤنا ومعالجونا تقنية برمجة العقل السريعة لمساعدة المراهقين على تجاوز أصعب مراحل المراهقة...',
             imgSrc: 'packages/3.webp',
             alt: 'جلسة علاج للمراهقين',
-            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/t-1123548',
-            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/teens-therapy'
+            dataHref1: 'https://cmconsultancy.simplybook.asia/v2/#book/service/11/count/1/',
+            dataHref2: 'https://cmconsultancy.simplybook.asia/v2/#book/service/2/count/1/'
         },
         {
             title: 'جلسة علاج الأطفال ',
             description: 'ساعد طفلك على تجاوز التحديات العاطفية والسلوكية من خلال جلسات علاجية تفاعلية وممتعة...',
             imgSrc: 'packages/4.webp',
             alt: 'علاج الصدمات والحزن',
-            dataHref1: 'https://tachafi-by-cm.zbooni.com/products/jls-lj-ltfl-s',
-            dataHref2: 'https://tachafi-by-cm.zbooni.com/products/child-therapy-1118680'
+            dataHref1: 'https://cmconsultancy.simplybook.asia/v2/#book/service/12/count/1/',
+            dataHref2: 'https://cmconsultancy.simplybook.asia/v2/#book/service/3/count/1/'
         }
     ];
 
