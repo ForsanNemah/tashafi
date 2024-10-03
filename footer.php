@@ -97,7 +97,7 @@ echo $website_name;
         <a href="#myform">
 
 
-        <button type="button" class="btn btn-primary rounded-pill pulsate"> احجز الحين</button>
+        <button type="button" class="btn booking-btn-class rounded-pill pulsate"> احجز الحين</button>
 
         </a>
      
@@ -273,28 +273,28 @@ foreach ($imageFiles as $image) {
 
 
 
-  <div class="row"  style="background-color: #2099f4;">
+  <div class="row mainbg2" hidden  >
 
 
-  <div class="container" hidden>
+  <div class="container"  >
   <div class="row justify-content-center">
     <div class="col-auto">
-      <a href="https://www.facebook.com/intshar.ksa" target="_blank"><i class="text-white fab fa-lg fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="text-white fab fa-lg fa-facebook"></i></a>
     </div>
     <div class="col-auto">
-      <a href="https://www.instagram.com/intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="text-white fab fa-lg fa-instagram"></i></a>
     </div>
     <div class="col-auto">
       <a href="#"><i class="text-white fas fa-lg fa-times" target="_blank"></i></a>
     </div>
     <div class="col-auto">
-      <a href="https://x.com/intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="text-white fab fa-lg fa-twitter"></i></a>
     </div>
     <div class="col-auto">
       <a href="#"><i class="text-white fab fa-lg fa-snapchat" target="_blank"></i></a>
     </div>
     <div class="col-auto">
-      <a href="https://www.tiktok.com/@intshar_ksa" target="_blank"><i class="text-white fab fa-lg fa-tiktok"></i></a>
+      <a href="#" target="_blank"><i class="text-white fab fa-lg fa-tiktok"></i></a>
     </div>
   </div>
 </div>
