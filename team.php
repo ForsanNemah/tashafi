@@ -61,8 +61,7 @@
             <h3> 
 
 
-            Psychologist and Founder of CMDC
-
+            Psychologist 
 
 
             </h3>
@@ -73,7 +72,7 @@
             <h3>    
 
 
-            Adult Psychiatry and Addiction Medicine
+            Adult Psychiatry 
 
             </h3>
         </div>
@@ -83,7 +82,7 @@
             <h3>   
 
 
-            NLP Practitioner, Rapid Mind Programming Practitioner
+            NLP Practitioner
 
             </h3>
         </div>
@@ -93,7 +92,7 @@
             <h3>   
 
 
-            Mental Health Consultant, Social Worker
+            Mental Health Consultant
 
             </h3>
         </div>
@@ -104,7 +103,7 @@
 
 
 
-            Mental Health Consultant, Social Worker (Arabic)
+            Mental Health Consultant
 
             </h3>
         </div>
@@ -114,7 +113,7 @@
             <h3>  
 
 
-            Life Coaching, Leadership Development Coaching, Time Management & Productivity Coaching
+            Life Coaching
 
 
             </h3>
@@ -124,7 +123,7 @@
             <img src="doctors/7.webp" alt="Team Member 1">
             <h3>   
 
-            Hypnotherapy and Relationship Coaching
+            Hypnotherapy 
             
             </h3>
         </div>
@@ -134,7 +133,7 @@
             <h3>  
 
 
-            Clinical Psychologist, Psychotherapist, Couple Therapist, Child and Teenager Therapist
+            Clinical Psychologist
 
             </h3>
         </div>
@@ -143,7 +142,7 @@
             <img src="doctors/9.webp" alt="Team Member 1">
             <h3>   
 
-            Addicts Therapy, Helping Adults, One-to-One Therapy, Group Therapy
+            Addicts Therapy 
 
             
             </h3>
