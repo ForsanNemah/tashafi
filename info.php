@@ -24,7 +24,9 @@ $sheet_url="https://docs.google.com/spreadsheets/d/1Cw50UoyyK4IobN-9q5YLT7LorvrF
 
 $form1_des="
 
-عروض اليوم الوطني
+
+
+لحق عروض انطلاق المنصة  
 ";
 $cta=0;
 $cta_text="احجز الان";
@@ -97,7 +99,7 @@ $footer_des3="
 
 $footer_des4="
 
-المملكة العربية السعودية-الخبر
+خدماتنا متاحه داخل السعوديه والامارات ولبنان
 
 ";
 

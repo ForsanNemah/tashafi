@@ -9,11 +9,16 @@
     background-color: #fff; /* Set the background color of the navigation bar to white */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   }
+  .navbar-brand img {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Add spacing between the logo and the text */
+  }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" dir="rtl">
   <div class="container">
-    <a class="navbar-brand ms-auto" href="#"> 
+    <a class="navbar-brand ms-auto" href="#">
+      <img src="footer_logo/Tachafi 14-0١.png" alt="Logo"> 
       <?php echo $website_name ?>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
