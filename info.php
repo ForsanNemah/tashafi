@@ -18,7 +18,7 @@ $dr_name="
 $phone_main="971585181280";
 $group_id="120363329896921034";
 
-$action_url="https://script.google.com/macros/s/AKfycbwhAY_BwOjjaGImO5U8HLk6t7ogFNuqgzleEL4T_1TFOkjCeJ5MynkZmBXvAfPPS_N2PA/exec";
+$action_url="https://script.google.com/macros/s/AKfycbzdpqGOFKz_GYvo2dckvlUkPGpfiBryviQWXzXRlmTB5YWvTgwRMSm1glCqROQsU30FzQ/exec";
 
 $sheet_url="https://docs.google.com/spreadsheets/d/1Cw50UoyyK4IobN-9q5YLT7LorvrF1xpPkV0_PTJK-MI/edit?usp=sharing";
 
