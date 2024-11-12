@@ -4,7 +4,7 @@
       مستقبل الصحة النفسية
     </h1>
     <p class="lead mt-3 mb-4 bold" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;  font-weight: bold;">
-      أول منصة لقياس تقدم صحتك النفسية بدقة باستخدام الذكاء الاصطناعي
+    تشافي اول عياده نفسية لبرمجة العقل السريع لتخطي  الصدمات.
     </p>
     
     <!-- Booking Button -->
